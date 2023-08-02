@@ -19,7 +19,7 @@ var db *gorm.DB
 func main() {
 	// DB connection
 	var dbErr error
-	dsn := "root:mrahmanpallab19977@tcp(localhost:3306)/pallab1?charset=utf8mb4&parseTime=True&loc=Local"
+	dsn := "root:12345@tcp(localhost:3306)/pallab1?charset=utf8mb4&parseTime=True&loc=Local"
 	db, dbErr = gorm.Open(mysql.Open(dsn), &gorm.Config{})
 
 	if dbErr != nil {
